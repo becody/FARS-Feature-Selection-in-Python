@@ -2,10 +2,10 @@
 """
 Created on Sun Oct 20 11:13:15 2019
 
-@author: 17046
+@author: Brittany Cody
 """
 ###############################################
-# Orange HW Team 2 
+# FARS Dataset Feature Selection
 ###############################################
 
 ###############################################
@@ -25,8 +25,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import RidgeCV, LassoCV, Ridge, Lasso
 
-ncdata = pd.read_csv("C:/Users/17046/OneDrive/Documents/MSA 20/Visualization/ncdata.csv", 
-                     index_col=0, na_values=['no info','.']) #need to code the NA's as strings
+ncdata = pd.read_csv() #need to code the NA's as strings
 
 #Dropping VIN variables and converting to a dataframe
 ncdata = pd.DataFrame(data=ncdata)
